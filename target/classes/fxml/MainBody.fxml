@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(235,229,213)" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fitness.view.mainbody.MainBodyController">
+   <children>
+      <ImageView fitHeight="330.0" fitWidth="600.0" layoutY="70.0">
+         <image>
+            <Image url="@../image/健身房背景图.jpg" />
+         </image>
+      </ImageView>
+      <Label prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: rgb(40,70,90);" textFill="WHITE" />
+      <ImageView fx:id="close_button" fitHeight="16.0" fitWidth="16.0" layoutX="578.0" layoutY="6.0" onMouseClicked="#close_button_action" onMouseEntered="#close_button_OnMouseEntered">
+         <image>
+            <Image url="@../image/关闭（黑）.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="35.0" prefHeight="36.0" prefWidth="600.0" style="-fx-background-color: rgb(173,191,197);" textFill="WHITE" />
+      <ImageView fx:id="person" fitHeight="30.0" fitWidth="30.0" layoutX="509.0" layoutY="38.0" onMouseClicked="#person_button_Action" onMouseEntered="#person_button_OnMouseEntered">
+         <image>
+            <Image url="@../image/联系人.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="courseManager" layoutX="340.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#courseManager_Action" onMouseEntered="#courseManager_OnMouseEntered" opacity="0.4" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: null;-fx-background-color: white" text="课程管理" textFill="#010505" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="equipManager" layoutX="60.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#equipManager_Action" onMouseEntered="#equipManager_OnMouseEntered" opacity="0.4" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: null;-fx-background-color: white" text="器械管理" textFill="#010505" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="memberManager" layoutX="340.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#memberManager_Action" onMouseEntered="#memberManager_OnMouseEntered" opacity="0.4" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: null;-fx-background-color: white" text="会员管理" textFill="#010505" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="coachManager" layoutX="60.0" layoutY="250.0" mnemonicParsing="false" onMouseClicked="#coachManager_Action" onMouseEntered="#coachManager_OnMouseEntered" opacity="0.4" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: null;-fx-background-color: white" text="教练管理" textFill="#010505" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <MenuButton fx:id="more" layoutX="540.0" layoutY="35.0" mnemonicParsing="false" onMouseEntered="#more_button_OnMouseEntered" prefHeight="35.0" prefWidth="58.0" style="-fx-background-color: rgb(173,191,197);" text="…">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fitness.view.mainbody.member_manager.MemberManagerController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="970.0">
+         <image>
+            <Image url="@../image/健身房背景图.jpg" />
+         </image>
+      </ImageView>
+      <Label prefHeight="40.0" prefWidth="970.0" style="-fx-background-color: rgb(0,199,197);" text="   会员信息管理" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="close_button" fitHeight="13.0" fitWidth="13.0" layoutX="947.0" layoutY="7.0" onMouseClicked="#close_button_action" onMouseEntered="#close_button_OnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/关闭（白）.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="6.0" layoutY="45.0" opacity="0.2" prefHeight="40.0" prefWidth="957.0" style="-fx-border-color: black" />
+      <TableView fx:id="table" layoutX="36.0" layoutY="98.0" onMouseClicked="#table_click_action" prefHeight="410.0" prefWidth="910.0" />
+      <TextField fx:id="searchText" layoutX="14.0" layoutY="50.0" prefHeight="30.0" prefWidth="268.0" promptText="可按会员号，姓名，手机号模糊查询" />
+      <Button fx:id="search" layoutX="281.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#search_button_action" onMouseEntered="#search_button_OnMouseEntered" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: rgb(74,74,74);" text="查询" textFill="white" />
+      <Button fx:id="insert" layoutX="365.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#insert_button_action" onMouseEntered="#insert_button_OnMouseEntered" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: rgb(0,153,204);" text="添加" textFill="white" />
+      <Button fx:id="delete" layoutX="449.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#delete_button_action" onMouseEntered="#delete_button_OnMouseEntered" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: rgb(0,153,204);" text="删除" textFill="white" />
+      <Pagination fx:id="page" layoutX="34.0" layoutY="97.0" prefHeight="474.0" prefWidth="910.0" />
+      <Button fx:id="coach" layoutX="876.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#coach_button_action" onMouseEntered="#coach_button_OnMouseEntered" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: rgb(180,210,11);" text="私教安排" textFill="white" />
+      <Button fx:id="course" layoutX="792.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#course_button_action" onMouseEntered="#course_button_OnMouseEntered" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: rgb(180,210,11);" text="选课列表" textFill="white" />
+   </children>
+</AnchorPane>

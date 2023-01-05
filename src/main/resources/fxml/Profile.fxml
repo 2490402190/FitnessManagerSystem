@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="505.0" prefWidth="368.0" style="-fx-background-color: rgb(235,229,213)" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fitness.view.mainbody.profile.ProfileController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="368.0">
+         <image>
+            <Image url="@../image/健身房背景图.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutY="-1.0" mnemonicParsing="false" opacity="0.7" prefHeight="505.0" prefWidth="368.0" style="-fx-border-color: null;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="headPicture" fitHeight="115.0" fitWidth="120.0" layoutX="124.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../headpicture/头像1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="43.0" layoutY="235.0">
+         <image>
+            <Image url="@../image/账号.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="43.0" layoutY="275.0">
+         <image>
+            <Image url="@../image/昵称.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="43.0" layoutY="313.0">
+         <image>
+            <Image url="@../image/性别.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="43.0" layoutY="361.0">
+         <image>
+            <Image url="@../image/电子邮箱.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="43.0" layoutY="405.0">
+         <image>
+            <Image url="@../image/生日.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nickname" layoutX="83.0" layoutY="276.0" prefHeight="30.0" prefWidth="250.0" />
+      <TextField fx:id="email" layoutX="83.0" layoutY="361.0" prefHeight="30.0" prefWidth="250.0" />
+      <Label fx:id="userId" layoutX="83.0" layoutY="232.0" prefHeight="30.0" prefWidth="250.0" />
+      <DatePicker fx:id="birthday" layoutX="83.0" layoutY="405.0" prefHeight="30.0" prefWidth="250.0" />
+      <Group fx:id="sex" layoutX="104.0" layoutY="322.0">
+         <children>
+            <RadioButton fx:id="male" layoutX="-9.0" layoutY="1.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="183.0" text="男">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="100.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="118.0" text="女" toggleGroup="$Group" />
+         </children>
+      </Group>
+      <Button fx:id="update_button" layoutX="194.0" layoutY="463.0" mnemonicParsing="false" onAction="#update_button_action" onMouseEntered="#update_button_OnMouseEntered" style="-fx-background-color: null" text="修改资料" textFill="#12b7f5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="close_button" fitHeight="16.0" fitWidth="16.0" layoutX="339.0" layoutY="12.0" onMouseClicked="#close_button_action" onMouseEntered="#close_button_OnMouseEntered" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/关闭（白）.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ok_button" layoutX="300.0" layoutY="463.0" mnemonicParsing="false" onAction="#ok_button_action" onMouseEntered="#ok_button_OnMouseEntered" style="-fx-background-color: null" text="保存" textFill="#12b7f5">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="head_button" fitHeight="20.0" fitWidth="20.0" layoutX="244.0" layoutY="171.0" onMouseClicked="#head_button_action" onMouseEntered="#head_button_OnMouseEntered" opacity="0.25">
+         <image>
+            <Image url="@../image/edit-编辑.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
